@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Calculator</title>
+</head>
+<body>
+    <header class="header">
+        <h1>IOS Calculator</h1>
+    </header>
+    <main>
+        <div class="phone">
+            <div class="phone-btn">
+          <div class="left-btn power"></div> 
+          <div class="left-btn volume1"></div> 
+          <div class="left-btn volume2"></div> 
+        </div>
+        <div class="phone-border">
+          <div class="phone-screen">
+            <div class="calc-screen">
+                <div class="top-icon">
+                  <div class="top-notch">
+                    <div class="front-cam"></div>
+                </div>
+                </div>
+                <div class="input-numbers">
+                  <input type="number" name="input-number" id="input-number" value="0" disabled/>
+                </div>
+                <div class="calc-container">
+                    <button class="calc-btn gray-btn" id="ac" name="ac" OnClick="CalcAC()"  value="">AC</button>
+                    <button class="calc-btn gray-btn" id="plus-minus" name="plus-minus" value="">+/-</button>
+                    <button class="calc-btn gray-btn" id="percentage" name="percentage" OnClick="Operate()"value="%">%</button>
+                    <button class="calc-btn yellow-btn" id="divide" name="divide" OnClick="Operate('/')"value="/">/</button>
+                    <button class="calc-btn dark-gray" id="seven" name="seven" OnClick="CalcDigit('7')" value="7">7</button>
+                    <button class="calc-btn dark-gray" id="eight" name="eight" OnClick="CalcDigit('8')" value="8">8</button>
+                    <button class="calc-btn dark-gray" id="nine" name="nine" OnClick="CalcDigit('9')" value="9">9</button>
+                    <button class="calc-btn yellow-btn" id="multiply" name="multiply" OnClick="Operate('*')" value="x">X</button>
+                    <button class="calc-btn dark-gray" id="four" name="four" OnClick="CalcDigit('4')" value="4">4</button>
+                    <button class="calc-btn dark-gray" id="five" name="five" OnClick="CalcDigit('5')"value="5">5</button>
+                    <button class="calc-btn dark-gray" id="six" name="six" OnClick="CalcDigit('6')"value="6">6</button>
+                    <button class="calc-btn yellow-btn" id="subtract" name="subtract" OnClick="Operate('-')" value="-">-</button>
+                    <button class="calc-btn dark-gray" id="one" name="one" OnClick="CalcDigit('1')" value="1">1</button>
+                    <button class="calc-btn dark-gray" id="two" name="two" OnClick="CalcDigit('2')"value="2">2</button>
+                    <button class="calc-btn dark-gray" id="three" name="three" OnClick="CalcDigit('3')" value="3">3</button>
+                    <button class="calc-btn yellow-btn" id="addition" name="addition" OnClick="Operate('+')">+</button>
+                    <button class="calc-btn dark-gray zero" id="zero" name="zero" OnClick="CalcDigit('0')" value="0">0</button>
+                    <button class="calc-btn dark-gray">.</button>
+                    <button class="calc-btn yellow-btn" id="equal" name="equal" onclick="Equal()">=</button>
+                  
+                </div>
+                <div class="home-btn"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
